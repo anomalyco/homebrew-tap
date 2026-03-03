@@ -5,20 +5,20 @@
 class Sst < Formula
   desc ""
   homepage ""
-  version "4.1.6"
+  version "4.1.7"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/anomalyco/sst/releases/download/v4.1.6/sst-mac-x86_64.tar.gz"
-      sha256 "20e4b356193047be8634fa961e0b3e6b6ada3b3c71fcfa5b2d25c81810321d52"
+      url "https://github.com/anomalyco/sst/releases/download/v4.1.7/sst-mac-x86_64.tar.gz"
+      sha256 "54a457e1fc71137842cdb0112f9308499734ba9d4ab9f10f9d6e89c2e8f5501c"
 
       define_method(:install) do
         bin.install "sst"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/anomalyco/sst/releases/download/v4.1.6/sst-mac-arm64.tar.gz"
-      sha256 "df37bb3c32a3a98dde60828fd53c555014f399480194b7fe8281245a2be00528"
+      url "https://github.com/anomalyco/sst/releases/download/v4.1.7/sst-mac-arm64.tar.gz"
+      sha256 "d9b3fc9089f4eb256b6d12d8f38f7e1fe58ec55a0b1c886fd40100b7999b49dd"
 
       define_method(:install) do
         bin.install "sst"
@@ -28,15 +28,15 @@ class Sst < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/anomalyco/sst/releases/download/v4.1.6/sst-linux-x86_64.tar.gz"
-      sha256 "9ad2e89ecaf52d46c2164812dea6e88568905ec17d9279f7e35aec69ec517c53"
+      url "https://github.com/anomalyco/sst/releases/download/v4.1.7/sst-linux-x86_64.tar.gz"
+      sha256 "cd602fc8ff96e0dab0c6de9ae38cc3524ea563e6293a0dbf8fec65edc87cf577"
       define_method(:install) do
         bin.install "sst"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/anomalyco/sst/releases/download/v4.1.6/sst-linux-arm64.tar.gz"
-      sha256 "d79c15d1f72a9d512d5d432b925387490fd57a59a5e8ba4dfdc143408868c0e6"
+      url "https://github.com/anomalyco/sst/releases/download/v4.1.7/sst-linux-arm64.tar.gz"
+      sha256 "225010555046a8a1919e767f640904df42e1c841706059f7ff4379900f9fc23b"
       define_method(:install) do
         bin.install "sst"
       end
