@@ -5,20 +5,20 @@
 class Sst < Formula
   desc ""
   homepage ""
-  version "4.12.8"
+  version "4.12.9"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/anomalyco/sst/releases/download/v4.12.8/sst-mac-x86_64.tar.gz"
-      sha256 "4b7a80b01eb3974ac17c9619a1ef27d22f2b395bc3ae2dca58716d2d8fadaf23"
+      url "https://github.com/anomalyco/sst/releases/download/v4.12.9/sst-mac-x86_64.tar.gz"
+      sha256 "bd98918d4c1c95ffb3d84e8ce6fb0a5b10b8eb2312d279df028e6734f6fd72f7"
 
       define_method(:install) do
         bin.install "sst"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/anomalyco/sst/releases/download/v4.12.8/sst-mac-arm64.tar.gz"
-      sha256 "7799c7de53bbc3b9e257f4ba9d91ba2f53be79070d31f9f628554234fe9943e2"
+      url "https://github.com/anomalyco/sst/releases/download/v4.12.9/sst-mac-arm64.tar.gz"
+      sha256 "15a6065915f82a78537918d7425d82812a0e801d595d9243dc6cfcfca8d49c79"
 
       define_method(:install) do
         bin.install "sst"
@@ -28,15 +28,15 @@ class Sst < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/anomalyco/sst/releases/download/v4.12.8/sst-linux-x86_64.tar.gz"
-      sha256 "64772e4545e1f597edb1733de601d2608485fa79c9dc047b8919538157a84bbe"
+      url "https://github.com/anomalyco/sst/releases/download/v4.12.9/sst-linux-x86_64.tar.gz"
+      sha256 "d2ff8eb74e2939dc54211b4e3e2c1cd447bb9dd3b33941a1ad3e663eda2fe63d"
       define_method(:install) do
         bin.install "sst"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/anomalyco/sst/releases/download/v4.12.8/sst-linux-arm64.tar.gz"
-      sha256 "b728a99678c86518aa7a0bc1ea77e4490edc2d754f125b3713084156e160c934"
+      url "https://github.com/anomalyco/sst/releases/download/v4.12.9/sst-linux-arm64.tar.gz"
+      sha256 "d92bebcd18733f4a45012d6778997e03f2b76b3c997e906e029dcb7788423b6f"
       define_method(:install) do
         bin.install "sst"
       end
