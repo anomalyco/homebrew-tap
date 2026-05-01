@@ -5,20 +5,20 @@
 class Sst < Formula
   desc ""
   homepage ""
-  version "4.12.10"
+  version "4.12.11"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/anomalyco/sst/releases/download/v4.12.10/sst-mac-x86_64.tar.gz"
-      sha256 "b33c6225d5c7ac4b04009ee2cd0523612857a930bdb4be899c9b0b9275abe997"
+      url "https://github.com/anomalyco/sst/releases/download/v4.12.11/sst-mac-x86_64.tar.gz"
+      sha256 "c8e7f564f30e94e90f60acac16573804126f48a4ba6b2a9fac55d8d4eb70f1b4"
 
       define_method(:install) do
         bin.install "sst"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/anomalyco/sst/releases/download/v4.12.10/sst-mac-arm64.tar.gz"
-      sha256 "50ab3100457e9bddd21f145e4bbc09f3a1f03ac9bccdeff348b468c3ce8fc0e3"
+      url "https://github.com/anomalyco/sst/releases/download/v4.12.11/sst-mac-arm64.tar.gz"
+      sha256 "e6ff78ca6ab6d45551990c88c4c03ad7173c3e1a6c76c946090c97fa0ad40441"
 
       define_method(:install) do
         bin.install "sst"
@@ -28,15 +28,15 @@ class Sst < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/anomalyco/sst/releases/download/v4.12.10/sst-linux-x86_64.tar.gz"
-      sha256 "8546be2df8614ee806c4d5742cecf788af2164cfac1c0f7e65010232dd1f6699"
+      url "https://github.com/anomalyco/sst/releases/download/v4.12.11/sst-linux-x86_64.tar.gz"
+      sha256 "19c3eed53f4610445b1f0a515645b57f3fc1c27d2e32e0206152ac1aa5c73fea"
       define_method(:install) do
         bin.install "sst"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/anomalyco/sst/releases/download/v4.12.10/sst-linux-arm64.tar.gz"
-      sha256 "6e4891a21365bd0358f527266b166e1948a6daff1e1531a28511770c539db3b0"
+      url "https://github.com/anomalyco/sst/releases/download/v4.12.11/sst-linux-arm64.tar.gz"
+      sha256 "4f8836244f9d9843198453c268bec6c315799e4768459165d664d0ed0b6f51a2"
       define_method(:install) do
         bin.install "sst"
       end
