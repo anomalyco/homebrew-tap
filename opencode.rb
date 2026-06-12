@@ -5,22 +5,22 @@
 class Opencode < Formula
   desc "The AI coding agent built for the terminal."
   homepage "https://github.com/anomalyco/opencode"
-  version "1.17.3"
+  version "1.17.4"
 
   depends_on "ripgrep"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/anomalyco/opencode/releases/download/v1.17.3/opencode-darwin-x64.zip"
-      sha256 "3bfa67a567dee440a8800e21ba0b208e8c74d6400a7dfae35eb900f815a90f81"
+      url "https://github.com/anomalyco/opencode/releases/download/v1.17.4/opencode-darwin-x64.zip"
+      sha256 "8d2023687e415c5ef2c70c7a790e5e2d6957bf1d195925d154e70b5fc15e999b"
 
       def install
         bin.install "opencode"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/anomalyco/opencode/releases/download/v1.17.3/opencode-darwin-arm64.zip"
-      sha256 "b49948f96d8e92c577d54854e2f038389d03c3dfbbeacc44643b73123210fd13"
+      url "https://github.com/anomalyco/opencode/releases/download/v1.17.4/opencode-darwin-arm64.zip"
+      sha256 "7a26d5427ff33e4f5bc942ad923a3b5ce3c88c6705fdecca9c2e27b59365594a"
 
       def install
         bin.install "opencode"
@@ -30,15 +30,15 @@ class Opencode < Formula
 
   on_linux do
     if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
-      url "https://github.com/anomalyco/opencode/releases/download/v1.17.3/opencode-linux-x64.tar.gz"
-      sha256 "d4bd238a2c1ff56aca1cd3397d21a0a317f5992234517a7f8e2afbbd72010a7d"
+      url "https://github.com/anomalyco/opencode/releases/download/v1.17.4/opencode-linux-x64.tar.gz"
+      sha256 "a2ece9181aab3817a6b59fa390b6d459b187e3ec917be802ecbca88b632c5ef9"
       def install
         bin.install "opencode"
       end
     end
     if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
-      url "https://github.com/anomalyco/opencode/releases/download/v1.17.3/opencode-linux-arm64.tar.gz"
-      sha256 "861b8c66ced51d6d9a66ea773ce47ede663a44bd17d837b9c21acfa3468801e5"
+      url "https://github.com/anomalyco/opencode/releases/download/v1.17.4/opencode-linux-arm64.tar.gz"
+      sha256 "5cb32d53238a205a4ad71f70be8d669aaf460f55121ebc16ff9d12909609dd0b"
       def install
         bin.install "opencode"
       end
