@@ -5,7 +5,6 @@
 class Opencode < Formula
   desc "The AI coding agent built for the terminal."
   homepage "https://github.com/anomalyco/opencode"
-  version "1.18.23"
 
   depends_on "ripgrep"
 
