@@ -7,22 +7,22 @@ class Opentunnel < Formula
   on_macos do
     on_arm do
       url "https://github.com/anomalyco/opentunnel/releases/download/v0.1.4/opentunnel-darwin-arm64.tar.gz"
-      sha256 "6b7ac4a9843da709561eb6b7fb5cd0daf893f6f39925da669dc4f45ff55a04ed"
+      sha256 "81aa49dccd9c11543992e2c8814e3b9d5a3f90f5aafa9c271cda1f72897f75cd"
     end
     on_intel do
       url "https://github.com/anomalyco/opentunnel/releases/download/v0.1.4/opentunnel-darwin-x64.tar.gz"
-      sha256 "0d6dd0b4b30f695d931ff4cd19091ceaaed16223d933810e35bee0b563cb0d90"
+      sha256 "b49ee378ed9cd1097dedf20f3fcf685678e85b037b7fff0ee24bba070a2d0789"
     end
   end
 
   on_linux do
     on_arm do
       url "https://github.com/anomalyco/opentunnel/releases/download/v0.1.4/opentunnel-linux-arm64.tar.gz"
-      sha256 "5268aa61e16ec0ae242f9a75d780a84d8b40c15da54c47867a9c21256964571f"
+      sha256 "db09fc4da333f9b1e97ab2893f20e3243c2bb901e13ec4b129c48299ef0ac6f0"
     end
     on_intel do
       url "https://github.com/anomalyco/opentunnel/releases/download/v0.1.4/opentunnel-linux-x64.tar.gz"
-      sha256 "4be205f9f962fec0615a1906c3cfc2b318a1285165c025bbf39276ee20b77b39"
+      sha256 "e1c1969c50394a733403d7cb91117998a61be5d6a35ed5aa30582bb432d1b5e0"
     end
   end
 
