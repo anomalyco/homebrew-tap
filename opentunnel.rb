@@ -1,28 +1,28 @@
 class Opentunnel < Formula
   desc "Public URLs for local services, end-to-end encrypted"
   homepage "https://opentunnel.xyz"
-  version "0.3.0"
+  version "0.4.0"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/anomalyco/opentunnel/releases/download/v0.3.0/opentunnel-darwin-arm64.tar.gz"
-      sha256 "936da191f40dceb011b33298dd72c893143d1524b59a6fe2d6e39beafb48609a"
+      url "https://github.com/anomalyco/opentunnel/releases/download/v0.4.0/opentunnel-darwin-arm64.tar.gz"
+      sha256 "5ced0d8db44b57bf50f5d47aa541d7f13740dde6772a98c073c8ca7086df879d"
     end
     on_intel do
-      url "https://github.com/anomalyco/opentunnel/releases/download/v0.3.0/opentunnel-darwin-x64.tar.gz"
-      sha256 "9399434ba22d061235285641fcd657b03a663335de1af33ab5629b1a68cb48fb"
+      url "https://github.com/anomalyco/opentunnel/releases/download/v0.4.0/opentunnel-darwin-x64.tar.gz"
+      sha256 "caff011996ba0ecfc7a4f62eb73ae9ae8352c9016d031b79c73569f97f9ed7ce"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/anomalyco/opentunnel/releases/download/v0.3.0/opentunnel-linux-arm64.tar.gz"
-      sha256 "b38d17c7971c9b08cafa2ea0105fa056ac2fe83a796c8b0486a033c4286554de"
+      url "https://github.com/anomalyco/opentunnel/releases/download/v0.4.0/opentunnel-linux-arm64.tar.gz"
+      sha256 "617df6f5442c0260b348d9f5eb6c73df7b5e02093aa93db44bae434ec51d5f69"
     end
     on_intel do
-      url "https://github.com/anomalyco/opentunnel/releases/download/v0.3.0/opentunnel-linux-x64.tar.gz"
-      sha256 "59c4c2adacfbfb525b5a9a5a79dc8af5514cbfcd7cc186bd7d36d8caa1ffdb27"
+      url "https://github.com/anomalyco/opentunnel/releases/download/v0.4.0/opentunnel-linux-x64.tar.gz"
+      sha256 "61b65897f4d709c0441f35a324d61843b9f40fbfc72562b923349f702aba7268"
     end
   end
 
