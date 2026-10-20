@@ -5,7 +5,7 @@ cask "hex" do
   url "https://downloads.hex.kitlangton.dev/releases/HEX-#{version}-arm64.dmg"
   name "Hex"
   desc "Local-first voice dictation"
-  homepage "https://hex.kitlangton.dev/"
+  homepage "https://hex.kitlangton.com/"
 
   livecheck do
     url "https://downloads.hex.kitlangton.dev/appcast.xml"
