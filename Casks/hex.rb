@@ -1,6 +1,6 @@
 cask "hex" do
-  version "2.3.0"
-  sha256 "3a2872b29bde17f3a5c3cc2643e74eaa11ae7d6911b53a803f619a62fd55e5ce"
+  version "2.3.1"
+  sha256 "56de94665da8fefbe0fe6310368fd7b62497dff593b6818475f9c5fa751def7a"
 
   url "https://downloads.hex.kitlangton.dev/releases/HEX-#{version}-arm64.dmg"
   name "Hex"
