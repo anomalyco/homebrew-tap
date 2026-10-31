@@ -1,14 +1,18 @@
 cask "hex" do
-  # Until Hex's first stable release, the cask installs the newest dev build;
-  # Hex then updates itself from the Dev channel. Hex's Release workflow
-  # replaces this with a versioned cask at the first stable release.
-  version :latest
-  sha256 :no_check
+  version "3.0.0"
+  sha256 "366c5179115e1bf6696f39b946256cf821ddf0aaba05085f38188e930d38b70b"
 
-  url "https://anoma.ly/release/hex/desktop/dev/macos-arm64-dmg"
+  url "https://anoma.ly/release/hex/files/366c5179115e1bf6696f39b946256cf821ddf0aaba05085f38188e930d38b70b/Hex.dmg"
   name "Hex"
   desc "Local voice dictation"
   homepage "https://anoma.ly/hex/"
+
+  livecheck do
+    url "https://anoma.ly/release/hex/desktop/stable.json"
+    strategy :json do |json|
+      json.dig("release", "version")
+    end
+  end
 
   auto_updates true
   depends_on arch: :arm64
