@@ -1,8 +1,8 @@
 cask "hex" do
-  version "3.2.0"
-  sha256 "7bcf74fa2058dfdf89ba2c6b8ee6942349758f4f177198744d1e8472b0d2ed96"
+  version "3.3.0"
+  sha256 "c57106949a28a3d0767cc15505cd802638badeb0c18cfd06c57b130ab0d98859"
 
-  url "https://anoma.ly/release/hex/files/7bcf74fa2058dfdf89ba2c6b8ee6942349758f4f177198744d1e8472b0d2ed96/Hex.dmg"
+  url "https://anoma.ly/release/hex/files/c57106949a28a3d0767cc15505cd802638badeb0c18cfd06c57b130ab0d98859/Hex.dmg"
   name "Hex"
   desc "Local voice dictation"
   homepage "https://anoma.ly/hex/"
