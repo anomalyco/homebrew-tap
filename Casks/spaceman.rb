@@ -16,7 +16,7 @@ cask "spaceman" do
 
   auto_updates true
   depends_on arch: :arm64
-  depends_on macos: ">= :sonoma"
+  depends_on macos: :sonoma
 
   app "Spaceman.app"
   binary "#{appdir}/Spaceman.app/Contents/MacOS/spaceman"
