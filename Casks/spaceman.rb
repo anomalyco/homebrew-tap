@@ -1,8 +1,8 @@
 cask "spaceman" do
-  version "0.3.4"
-  sha256 "fea61dc64ad8325a17be723d8661b851f8cd68ae2ff03efc5f62b6a38761f758"
+  version "0.3.5"
+  sha256 "0184acc428b25c7826639800a5c8a4f5fa20117062c48ca309b6b35fae08046a"
 
-  url "https://anoma.ly/release/spaceman/files/fea61dc64ad8325a17be723d8661b851f8cd68ae2ff03efc5f62b6a38761f758/Spaceman.zip"
+  url "https://anoma.ly/release/spaceman/files/0184acc428b25c7826639800a5c8a4f5fa20117062c48ca309b6b35fae08046a/Spaceman.zip"
   name "Spaceman"
   desc "Tiling window manager with stable logical windows"
   homepage "https://anoma.ly/spaceman/"
