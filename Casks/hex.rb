@@ -1,8 +1,8 @@
 cask "hex" do
-  version "3.4.0"
-  sha256 "1a71e62955924e4e51c28ca3c5867adf6c6af2fc29179a354f0843343a7afc44"
+  version "3.5.0"
+  sha256 "fd4892a9c72185effc00639cb3f2c723d24b7850ca89ac57cc69b068a2d64312"
 
-  url "https://anoma.ly/release/hex/files/1a71e62955924e4e51c28ca3c5867adf6c6af2fc29179a354f0843343a7afc44/Hex.dmg"
+  url "https://anoma.ly/release/hex/files/fd4892a9c72185effc00639cb3f2c723d24b7850ca89ac57cc69b068a2d64312/Hex.dmg"
   name "Hex"
   desc "Local voice dictation"
   homepage "https://anoma.ly/hex/"
@@ -19,6 +19,7 @@ cask "hex" do
   depends_on macos: :sequoia
 
   app "Hex.app"
+  binary "#{appdir}/Hex.app/Contents/MacOS/hex"
 
   uninstall quit: "anomaly.hex"
 
